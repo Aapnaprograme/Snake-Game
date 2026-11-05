@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Snake Game</title>
+    <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <!-- Top Header -->
+        <header class="top-bar">
+            <div class="logo">🐍 SNAKE GAME<span class="highlight"> AAPNA</span>ROGRAM</div>
+            <button id="fullscreenBtn">⛶ FULLSCREEN</button>
+        </header>
+
+        <!-- Score Board -->
+        <div class="score-board">
+            <div>
+                <small>SCORE</small>
+                <h2 id="score">000</h2>
+            </div>
+
+            <div>
+                <small>HIGH SCORE</small>
+                <h2 id="highScore">000</h2>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <main class="game-screen">
+            <canvas id="gameCanvas"></canvas>
+
+            <!-- Start / Game Over Screen -->
+            <div class="overlay" id="overlay">
+                <h1 id="message">SNAKE GAME</h1>
+                <p id="subMessage">Eat food and grow bigger!</p>
+                <button id="startBtn">START GAME</button>
+            </div>
+        </main>
+
+        <!-- Game Buttons -->
+        <div class="bottom-panel">
+
+            <div class="game-actions">
+                <button id="pauseBtn">Ⅱ PAUSE</button>
+                <button id="restartBtn">↻ RESTART</button>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="controls">
+
+                <button class="empty-btn"></button>
+                <button class="direction" data-direction="UP">▲</button>
+                <button class="empty-btn"></button>
+
+                <button class="direction" data-direction="LEFT">◀</button>
+                <button class="direction" data-direction="DOWN">▼</button>
+                <button class="direction" data-direction="RIGHT">▶</button>
+
+            </div>
+
+            <p class="footer-text">USE ARROW KEYS OR TOUCH CONTROLS</p>
+
+        </div>
+
+    </div>
+
+    <script src="snake1.js"></script>
+</body>
+</html>
